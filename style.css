@@ -52,6 +52,9 @@ body{
 *, *::before, *::after {
  box-sizing: border-box;
 }
+sub {
+  vertical-align: sub;
+}
 .bg-pic{
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
   background-repeat: no-repeat;
@@ -532,3 +535,226 @@ body{
       font-size: 1.5rem;
     }
   }
+
+  .pay-bg-pic{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+  }
+
+  .pay-banner h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 8rem;
+  }
+  .pay-banner h3{
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .pay-content{
+    margin-top: 17.5rem;
+  }
+  .pay-content h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .pay-sub{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+  }
+  .pay-sub li{
+    margin-right: 1rem;
+  }
+  .pay-sub li a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    color:#56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    padding:0.75rem 2rem;
+    margin-right: 1rem;
+    display: block;
+  }
+  .pay-version{
+    margin-top: 4.375rem;
+    margin-bottom: 6.25rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* .version-item{
+    width: 50%;
+  } */
+  .version-basic{
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 0.75rem;
+    padding:1rem;
+    margin-right: 1rem;
+    width: 48%;
+  }
+  .version-basic h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #F5F5F5;
+  }
+  .version-p-box{
+    margin:2rem 0;
+  }
+  .version-p-box p{
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  .sub-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .sub-item{
+    background: #F5F5F5;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+  }
+  .sub-item h4{
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .sub-item p{
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  .color-b{
+    color: #56C4C5;
+  }
+  .sub-equal{
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .sub-item sub{
+    font-size: 0.75rem;
+    padding-left: 0.5rem;
+  }
+  .check-box{
+    padding: 1.8rem;
+    display: flex;
+    justify-content: center;
+  }
+  .check-box img{
+    padding-right: 1rem;
+  }
+  .check-box li{
+    margin-bottom: 1.25rem;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+  }
+  .button a{
+    display: inline-block;
+    background:#56C4C5;
+    border-radius: 50rem;
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  @media (max-width:992px){
+    .pay-sub{
+      overflow: scroll;
+      justify-content: flex-start;
+    }
+    .pay-sub li a{
+      padding: 1rem;
+      width: 160px;
+      text-align: center;
+    }
+    .version-basic{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .sub-box{
+      justify-content: center;
+    }
+  }
+
+  @media (max-width:767px){
+    .pay-sub li a{
+      padding: 0.75rem 0.75rem;
+    }
+    .pay-hr{
+      border:1px solid #FFD153;
+      margin-bottom: 2rem;
+      
+    }
+    .pay-bg-pic{
+      background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0% -10%;
+    }
+  }
+  .faq-box h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .faq-q{
+    padding: 1rem;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  .faq-q a{
+    text-decoration: none;
+    color:#221E1F;
+    font-size: 1.125rem;
+  }
+  @media (max-width:576px){
+    /* .check-box ul {
+      margin: 0; */
+    /* } */
+  }
+  @media (max-width:375px){
+    .pay-bg-pic{
+      background-position: 0% 5%;
+    }
+    .pay-banner h2{
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+    .pay-content h2{
+      font-size: 1.75rem;
+    }
+    .pay-sub li {
+      margin-right: 0;
+    }
+    .pay-sub li a{
+      padding:0.5rem 1rem;
+      width: 120px;
+    }
+    .check-box {
+      padding: 0.5rem;
+    }
+    .check-box li{
+      line-height: 1.5rem;
+    }
+    .faq-box h2{
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+    }
+    .pay-version{
+      margin-bottom: 3.75rem;
+    }
+    }
