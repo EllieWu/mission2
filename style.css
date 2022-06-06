@@ -387,8 +387,9 @@ body{
     padding-bottom: 3%;
   }
   .main-content{
-    display: flex;
-    align-items: center; 
+    /* display: flex;
+    align-items: center;  */
+    margin: auto;
   }
   .main-content-box{
     margin-left: 5rem;
