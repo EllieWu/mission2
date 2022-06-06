@@ -52,9 +52,9 @@ body{
 *, *::before, *::after {
  box-sizing: border-box;
 }
-sub {
+/* sub {
   vertical-align: sub;
-}
+} */
 .bg-pic{
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
   background-repeat: no-repeat;
@@ -77,7 +77,7 @@ sub {
   }
 }
 .container {
-    max-width: 1120px;
+    max-width: 1088px;
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -120,6 +120,10 @@ sub {
     font-weight: bold;
     line-height: 1.5;
   }
+  .pay-button:hover{
+    background:#c71e12;
+    color:white;
+  }
   .banner{
     display: flex;
     flex-wrap: wrap;
@@ -153,6 +157,7 @@ sub {
     font-size: 3rem;
     font-weight: bold;
     padding-bottom: 3%;
+    line-height: 4rem;
   }
   .banner-item h2{
     font-size: 1.25rem;
@@ -161,7 +166,7 @@ sub {
   .media-section{
     padding-top: 5%;
   }
-  .media-section h3{
+  .media-section h2{
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
@@ -182,7 +187,7 @@ sub {
     width: 100px;
     padding-bottom: 5%;
   }
-  .media-item h2{
+  .media-item h3{
     font-weight: bold;
     padding-bottom: 10%;
     font-size: 1.5rem;
@@ -198,16 +203,21 @@ sub {
     }
     .banner-item p{
       font-size: 2rem;
+      line-height: 2.5rem;
     }
     .banner-item h2{
       font-size: 1rem;
       margin-top: 1rem;
     }
+    .media-section{
+      padding: 0;
+      margin-top: 5rem;
+    }
     .media-section h3{
       font-size: 1.75rem;
     }
     .media-section h2{
-      font-size: 1.125rem;
+      font-size: 2rem;
     }
   }
   @media (max-width:768px) {
@@ -234,13 +244,13 @@ sub {
   .service-section{
     padding-bottom: 6.25rem;
   }
-  .service-section h3{
+  .service-section h2{
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
     padding-top: 6.25%;
   }
-  .service-section h4{
+  .service-section h3{
     font-size: 1.25rem;
     text-align: center;
     padding-top: 1rem;
@@ -271,6 +281,7 @@ sub {
   }
   .service-item p{
     padding-bottom: 3%;
+    line-height: 1.5rem;
   }
   @media (max-width:992px){
     .service{
@@ -289,9 +300,15 @@ sub {
       margin:0 auto;  
       padding-top: 2rem;
     }
-    .service-section h3{
-      font-size: 1.75rem;
+    .service-section h2{
       margin-top: 3.75rem;
+      padding-top: 0;
+      font-size: 1.75rem;
+    }
+    .service-section h3{
+      font-size: 1.125rem;
+      margin-top: 1rem;
+      line-height: 1.5rem;
     }
     .service-section h4{
       font-size: 1.125rem;
@@ -317,10 +334,11 @@ sub {
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 1rem;
     overflow:hidden;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     margin-right: 2rem;
     margin-bottom: 2.75rem;
+    padding: 1rem;
     
   }
   .main-card-body{
@@ -374,6 +392,10 @@ sub {
     color:white;
     text-decoration: none;
     border-radius: 27px;
+  }
+  .main-content a:hover{
+    background: #439b9c;
+    color:white;
   }
   @media (max-width:992px){
     .main-section{
@@ -516,6 +538,10 @@ sub {
     text-align: center;
     width: 136px; 
   }
+  .footer a:hover{
+    background: #439b9c;
+    color:white;
+  }
   .copyright {
     text-align: center;
     background-color: #F5F5F5;
@@ -577,6 +603,10 @@ sub {
     margin-right: 1rem;
     display: block;
   }
+  .pay-sub li a:hover{
+    background:#56C4C5;
+    color:white;
+  }
   .pay-version{
     margin-top: 4.375rem;
     margin-bottom: 6.25rem;
@@ -625,8 +655,6 @@ sub {
   }
   .sub-item p{
     font-size: 2rem;
-    display: flex;
-    align-items: flex-end;
   }
   .color-b{
     color: #56C4C5;
@@ -637,7 +665,7 @@ sub {
   }
   .sub-item sub{
     font-size: 0.75rem;
-    padding-left: 0.5rem;
+    
   }
   .check-box{
     padding: 1.8rem;
@@ -665,7 +693,10 @@ sub {
     font-weight: bold;
     line-height: 1.5;
   }
-
+  .button a:hover{
+    background: #439b9c;
+    color:white;
+  }
   @media (max-width:992px){
     .pay-sub{
       overflow: scroll;
